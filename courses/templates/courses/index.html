@@ -1,0 +1,9 @@
+{% if latest_course_list %}
+    <ul>
+    {% for course in latest_course_list %}
+        <li><a href="{% url 'detail' course.id %}">{{ course.title }}</a></li>{{ choice.votes }}
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

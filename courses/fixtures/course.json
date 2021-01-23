@@ -1,0 +1,647 @@
+[
+{
+    "model": "courses.subject",
+    "pk": 1,
+    "fields": {
+        "title": "CS Engineering",
+        "slug": "CS-Engineering"
+    }
+},
+{
+    "model": "courses.subject",
+    "pk": 2,
+    "fields": {
+        "title": "Python",
+        "slug": "Python"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+        "owner": 1,
+        "subject": 1,
+        "title": "DBMS",
+        "slug": "DBMS",
+        "overview": "database database database database",
+        "created": "2018-08-18T13:34:03.112Z",
+        "students": [
+            1
+        ]
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+        "owner": 1,
+        "subject": 1,
+        "title": "Data Structure",
+        "slug": "Data-Structure",
+        "overview": "Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computational complexity of those operations. In comparison, a data structure is a concrete implementation of the space provided by an ADT. [5]\r\n\r\nDifferent kinds of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. For example, relational databases commonly use B-tree indexes for data retrieval,[6] while compiler implementations usually use hash tables to look up identifiers.[7]\r\n\r\nData structures provide a means to manage large amounts of data efficiently for uses such as large databases and internet indexing services. Usually, efficient data structures are key to designing efficient algorithms. Some formal design methods and programming languages emphasize data structures, rather than algorithms, as the key organizing factor in software design. Data structures can be used to organize the storage and retrieval of information stored in both main memory and secondary memory.[8]",
+        "created": "2018-08-18T13:41:46.437Z",
+        "students": [
+            1
+        ]
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 3,
+    "fields": {
+        "owner": 1,
+        "subject": 1,
+        "title": "Parallel Algorithms",
+        "slug": "Parallel-Algorithms",
+        "overview": "\uf0b7 Parallel Algorithm \u2013 The problem is divided into sub-problems and are executed in\r\nparallel to get individual outputs. Later on, these individual outputs are combined\r\ntogether to get the final desired output.",
+        "created": "2018-08-18T20:22:16.381Z",
+        "students": [
+            1
+        ]
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 1,
+    "fields": {
+        "course": 1,
+        "title": "ER Model",
+        "description": "",
+        "order": 0
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 2,
+    "fields": {
+        "course": 2,
+        "title": "Array",
+        "description": "In abstract array theory, the virtual item of an empty array may be any array, with the consequence that empty arrays of the same shape differ according to their virtual items. In conformal array theory, empty arrays of the same shape are the same.",
+        "order": 0
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 3,
+    "fields": {
+        "course": 2,
+        "title": "Link List",
+        "description": "A node is a collection of two sub-elements or parts. A data part that stores the element and a next part that stores the link to the next node. Linked List: A linked list is formed when many such nodes are linked together to form a chain.",
+        "order": 1
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 4,
+    "fields": {
+        "course": 1,
+        "title": "Functional Dependency",
+        "description": "",
+        "order": 1
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 5,
+    "fields": {
+        "course": 1,
+        "title": "Normal Form",
+        "description": "",
+        "order": 2
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 6,
+    "fields": {
+        "course": 2,
+        "title": "Tree",
+        "description": "Tree\r\nA tree is an undirected graph G that satisfies any of the following equivalent conditions:\r\n\r\nG is connected and has no cycles.\r\nG is acyclic, and a simple cycle is formed if any edge is added to G.\r\nG is connected, but would become disconnected if any single edge is removed from G.\r\nG is connected and the 3-vertex complete graph K3 is not a minor of G.\r\nAny two vertices in G can be connected by a unique simple path.\r\nIf G has finitely many vertices, say n of them, then the above statements are also equivalent to any of the following conditions:\r\n\r\nG is connected and has n \u2212 1 edges.\r\nG is connected, and every subgraph of G includes at least one vertex with zero or one incident edges. (That is, G is connected and 1-degenerate.)\r\nG has no simple cycles and has n \u2212 1 edges.\r\nAs elsewhere in graph theory, the order-zero graph (graph with no vertices) is generally not considered to be a tree: while it is vacuously connected as a graph (any two vertices can be connected by a path), it is not 0-connected (or even (\u22121)-connected) in algebraic topology, unlike non-empty trees, and violates the \"one more vertex than edges\" relation. It may, however, be considered as a forest consisting of zero trees.\r\n\r\nAn internal vertex (or inner vertex or branch vertex) is a vertex of degree at least 2. Similarly, an external vertex (or outer vertex, terminal vertex or leaf) is a vertex of degree 1.\r\n\r\nAn irreducible tree (or series-reduced tree) is a tree in which there is no vertex of degree 2.",
+        "order": 2
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 7,
+    "fields": {
+        "course": 2,
+        "title": "Graph",
+        "description": "Graph\r\nIn the most common sense of the term,[1] a graph is an ordered pair G = (V, E) comprising a set V of vertices or nodes or points together with a set E of edges or arcs or lines, which are 2-element subsets of V (i.e. an edge is associated with two vertices, and that association takes the form of the unordered pair comprising those two vertices). To avoid ambiguity, this type of graph may be described precisely as undirected and simple.\r\n\r\nOther senses of graph stem from different conceptions of the edge set. In one more generalized notion,[2] V is a set together with a relation of incidence that associates with each edge two vertices. In another generalized notion, E is a multiset of unordered pairs of (not necessarily distinct) vertices. Many authors call this type of object a multigraph or pseudograph.\r\n\r\nAll of these variants and others are described more fully below.\r\n\r\nThe vertices belonging to an edge are called the ends or end vertices of the edge. A vertex may exist in a graph and not belong to an edge.\r\n\r\nV and E are usually taken to be finite, and many of the well-known results are not true (or are rather different) for infinite graphs because many of the arguments fail in the infinite case. The order of a graph is |V |, its number of vertices. The size of a graph is |E|, its number of edges. The degree or valency of a vertex is the number of edges that connect to it, where an edge that connects a vertex to itself (a loop) is counted twice.\r\n\r\nFor an edge {x, y}, graph theorists usually use the somewhat shorter notation xy.",
+        "order": 3
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 8,
+    "fields": {
+        "course": 3,
+        "title": "Hypercube Network",
+        "description": "Hypercube Network\r\nA hypercube is an n-dimensional construct where edges are perpendicular among themselves and are of same length. An n-dimensional hypercube is also known as an n-cube or an n-dimensional cube.\r\n\r\nFeatures of Hypercube with 2k node\r\nDiameter = k\r\nBisection width = 2k\u20131\r\nNumber of edges = k\r\nMatrix Multiplication using Hypercube Network\r\nGeneral specification of Hypercube networks \u2212\r\n\r\nLet N = 2m be the total number of processors. Let the processors be P0, P1\u2026..PN-1.\r\n\r\nLet i and ib be two integers, 0 < i,ib < N-1 and its binary representation differ only in position b, 0 < b < k\u20131.\r\n\r\nLet us consider two n \u00d7 n matrices, matrix A and matrix B.\r\n\r\nStep 1 \u2212 The elements of matrix A and matrix B are assigned to the n3 processors such that the processor in position i, j, k will have aji and bik.\r\n\r\nStep 2 \u2212 All the processor in position (i,j,k) computes the product\r\n\r\nC(i,j,k) = A(i,j,k) \u00d7 B(i,j,k)\r\n\r\nStep 3 \u2212 The sum C(0,j,k) = \u03a3C(i,j,k) for 0 \u2264 i \u2264 n-1, where 0 \u2264 j, k < n\u20131.",
+        "order": 0
+    }
+},
+{
+    "model": "courses.module",
+    "pk": 9,
+    "fields": {
+        "course": 3,
+        "title": "Graph Coloring",
+        "description": "Graph coloring is a method to assign colors to the vertices of a graph so that no two adjacent vertices have the same color. Some graph coloring problems are \u2212\r\n\r\nVertex coloring \u2212 A way of coloring the vertices of a graph so that no two adjacent vertices share the same color.\r\n\r\nEdge Coloring \u2212 It is the method of assigning a color to each edge so that no two adjacent edges have the same color.\r\n\r\nFace coloring \u2212 It assigns a color to each face or region of a planar graph so that no two faces that share a common boundary have the same color.",
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 3,
+    "fields": {
+        "module": 5,
+        "content_type": 14,
+        "object_id": 2,
+        "order": 0
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 4,
+    "fields": {
+        "module": 5,
+        "content_type": 13,
+        "object_id": 2,
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 9,
+    "fields": {
+        "module": 1,
+        "content_type": 13,
+        "object_id": 5,
+        "order": 0
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 10,
+    "fields": {
+        "module": 1,
+        "content_type": 12,
+        "object_id": 2,
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 11,
+    "fields": {
+        "module": 1,
+        "content_type": 14,
+        "object_id": 4,
+        "order": 2
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 12,
+    "fields": {
+        "module": 2,
+        "content_type": 13,
+        "object_id": 6,
+        "order": 0
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 13,
+    "fields": {
+        "module": 2,
+        "content_type": 12,
+        "object_id": 3,
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 14,
+    "fields": {
+        "module": 3,
+        "content_type": 13,
+        "object_id": 7,
+        "order": 0
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 15,
+    "fields": {
+        "module": 3,
+        "content_type": 12,
+        "object_id": 4,
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 16,
+    "fields": {
+        "module": 6,
+        "content_type": 13,
+        "object_id": 8,
+        "order": 0
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 17,
+    "fields": {
+        "module": 6,
+        "content_type": 12,
+        "object_id": 5,
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 18,
+    "fields": {
+        "module": 7,
+        "content_type": 13,
+        "object_id": 9,
+        "order": 0
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 19,
+    "fields": {
+        "module": 7,
+        "content_type": 12,
+        "object_id": 6,
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 20,
+    "fields": {
+        "module": 7,
+        "content_type": 14,
+        "object_id": 5,
+        "order": 2
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 21,
+    "fields": {
+        "module": 6,
+        "content_type": 14,
+        "object_id": 6,
+        "order": 2
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 22,
+    "fields": {
+        "module": 3,
+        "content_type": 14,
+        "object_id": 7,
+        "order": 2
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 23,
+    "fields": {
+        "module": 2,
+        "content_type": 14,
+        "object_id": 8,
+        "order": 2
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 24,
+    "fields": {
+        "module": 8,
+        "content_type": 13,
+        "object_id": 10,
+        "order": 0
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 25,
+    "fields": {
+        "module": 8,
+        "content_type": 12,
+        "object_id": 7,
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 26,
+    "fields": {
+        "module": 8,
+        "content_type": 14,
+        "object_id": 9,
+        "order": 2
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 27,
+    "fields": {
+        "module": 9,
+        "content_type": 13,
+        "object_id": 11,
+        "order": 0
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 28,
+    "fields": {
+        "module": 9,
+        "content_type": 12,
+        "object_id": 8,
+        "order": 1
+    }
+},
+{
+    "model": "courses.content",
+    "pk": 29,
+    "fields": {
+        "module": 9,
+        "content_type": 14,
+        "object_id": 10,
+        "order": 2
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 2,
+    "fields": {
+        "owner": 1,
+        "title": "What is Normal Form?",
+        "created": "2018-08-18T16:11:43.400Z",
+        "updated": "2018-08-18T16:11:43.400Z",
+        "content": "Normalization is a process of organizing the data in database to avoid data redundancy, insertion anomaly, update anomaly & deletion anomaly. Let\u2019s discuss about anomalies first then we will discuss normal forms with examples.\r\n\r\nAnomalies in DBMS\r\nThere are three types of anomalies that occur when the database is not normalized. These are \u2013 Insertion, update and deletion anomaly. Let\u2019s take an example to understand this.\r\n\r\nExample: Suppose a manufacturing company stores the employee details in a table named employee that has four attributes: emp_id for storing employee\u2019s id, emp_name for storing employee\u2019s name, emp_address for storing employee\u2019s address and emp_dept for storing the department details in which the employee works. At some point of time the table looks like this:\r\n\r\nemp_id\temp_name\temp_address\temp_dept\r\n101\tRick\tDelhi\tD001\r\n101\tRick\tDelhi\tD002\r\n123\tMaggie\tAgra\tD890\r\n166\tGlenn\tChennai\tD900\r\n166\tGlenn\tChennai\tD004\r\nThe above table is not normalized. We will see the problems that we face when a table is not normalized.\r\n\r\n\r\n \r\nUpdate anomaly: In the above table we have two rows for employee Rick as he belongs to two departments of the company. If we want to update the address of Rick then we have to update the same in two rows or the data will become inconsistent. If somehow, the correct address gets updated in one department but not in other then as per the database, Rick would be having two different addresses, which is not correct and would lead to inconsistent data.\r\n\r\nInsert anomaly: Suppose a new employee joins the company, who is under training and currently not assigned to any department then we would not be able to insert the data into the table if emp_dept field doesn\u2019t allow nulls.\r\n\r\nDelete anomaly: Suppose, if at a point of time the company closes the department D890 then deleting the rows that are having emp_dept as D890 would also delete the information of employee Maggie since she is assigned only to this department.\r\n\r\nTo overcome these anomalies we need to normalize the data. In the next section we will discuss about normalization.\r\n\r\nNormalization\r\nHere are the most commonly used normal forms:\r\n\r\nFirst normal form(1NF)\r\nSecond normal form(2NF)\r\nThird normal form(3NF)\r\nBoyce & Codd normal form (BCNF)\r\nFirst normal form (1NF)\r\nAs per the rule of first normal form, an attribute (column) of a table cannot hold multiple values. It should hold only atomic values.\r\n\r\nExample: Suppose a company wants to store the names and contact details of its employees. It creates a table that looks like this:\r\n\r\nemp_id\temp_name\temp_address\temp_mobile\r\n101\tHerschel\tNew Delhi\t8912312390\r\n102\tJon\tKanpur\t8812121212\r\n9900012222\r\n\r\n103\tRon\tChennai\t7778881212\r\n104\tLester\tBangalore\t9990000123\r\n8123450987\r\n\r\nTwo employees (Jon & Lester) are having two mobile numbers so the company stored them in the same field as you can see in the table above.\r\n\r\nThis table is not in 1NF as the rule says \u201ceach attribute of a table must have atomic (single) values\u201d, the emp_mobile values for employees Jon & Lester violates that rule.\r\n\r\nTo make the table complies with 1NF we should have the data like this:\r\n\r\nemp_id\temp_name\temp_address\temp_mobile\r\n101\tHerschel\tNew Delhi\t8912312390\r\n102\tJon\tKanpur\t8812121212\r\n102\tJon\tKanpur\t9900012222\r\n103\tRon\tChennai\t7778881212\r\n104\tLester\tBangalore\t9990000123\r\n104\tLester\tBangalore\t8123450987\r\nSecond normal form (2NF)\r\nA table is said to be in 2NF if both the following conditions hold:\r\n\r\nTable is in 1NF (First normal form)\r\nNo non-prime attribute is dependent on the proper subset of any candidate key of table.\r\nAn attribute that is not part of any candidate key is known as non-prime attribute.\r\n\r\nExample: Suppose a school wants to store the data of teachers and the subjects they teach. They create a table that looks like this: Since a teacher can teach more than one subjects, the table can have multiple rows for a same teacher.\r\n\r\nteacher_id\tsubject\tteacher_age\r\n111\tMaths\t38\r\n111\tPhysics\t38\r\n222\tBiology\t38\r\n333\tPhysics\t40\r\n333\tChemistry\t40\r\nCandidate Keys: {teacher_id, subject}\r\nNon prime attribute: teacher_age\r\n\r\nThe table is in 1 NF because each attribute has atomic values. However, it is not in 2NF because non prime attribute teacher_age is dependent on teacher_id alone which is a proper subset of candidate key. This violates the rule for 2NF as the rule says \u201cno non-prime attribute is dependent on the proper subset of any candidate key of the table\u201d.\r\n\r\nTo make the table complies with 2NF we can break it in two tables like this:\r\nteacher_details table:\r\n\r\nteacher_id\tteacher_age\r\n111\t38\r\n222\t38\r\n333\t40\r\nteacher_subject table:\r\n\r\nteacher_id\tsubject\r\n111\tMaths\r\n111\tPhysics\r\n222\tBiology\r\n333\tPhysics\r\n333\tChemistry\r\nNow the tables comply with Second normal form (2NF).\r\n\r\nThird Normal form (3NF)\r\nA table design is said to be in 3NF if both the following conditions hold:\r\n\r\nTable must be in 2NF\r\nTransitive functional dependency of non-prime attribute on any super key should be removed.\r\nAn attribute that is not part of any candidate key is known as non-prime attribute.\r\n\r\nIn other words 3NF can be explained like this: A table is in 3NF if it is in 2NF and for each functional dependency X-> Y at least one of the following conditions hold:\r\n\r\nX is a super key of table\r\nY is a prime attribute of table\r\nAn attribute that is a part of one of the candidate keys is known as prime attribute.\r\n\r\nExample: Suppose a company wants to store the complete address of each employee, they create a table named employee_details that looks like this:\r\n\r\nemp_id\temp_name\temp_zip\temp_state\temp_city\temp_district\r\n1001\tJohn\t282005\tUP\tAgra\tDayal Bagh\r\n1002\tAjeet\t222008\tTN\tChennai\tM-City\r\n1006\tLora\t282007\tTN\tChennai\tUrrapakkam\r\n1101\tLilly\t292008\tUK\tPauri\tBhagwan\r\n1201\tSteve\t222999\tMP\tGwalior\tRatan\r\n \r\n\r\nSuper keys: {emp_id}, {emp_id, emp_name}, {emp_id, emp_name, emp_zip}\u2026so on\r\nCandidate Keys: {emp_id}\r\nNon-prime attributes: all attributes except emp_id are non-prime as they are not part of any candidate keys.\r\n\r\nHere, emp_state, emp_city & emp_district dependent on emp_zip. And, emp_zip is dependent on emp_id that makes non-prime attributes (emp_state, emp_city & emp_district) transitively dependent on super key (emp_id). This violates the rule of 3NF.\r\n\r\nTo make this table complies with 3NF we have to break the table into two tables to remove the transitive dependency:\r\n\r\nemployee table:\r\n\r\nemp_id\temp_name\temp_zip\r\n1001\tJohn\t282005\r\n1002\tAjeet\t222008\r\n1006\tLora\t282007\r\n1101\tLilly\t292008\r\n1201\tSteve\t222999\r\nemployee_zip table:\r\n\r\nemp_zip\temp_state\temp_city\temp_district\r\n282005\tUP\tAgra\tDayal Bagh\r\n222008\tTN\tChennai\tM-City\r\n282007\tTN\tChennai\tUrrapakkam\r\n292008\tUK\tPauri\tBhagwan\r\n222999\tMP\tGwalior\tRatan\r\nBoyce Codd normal form (BCNF)\r\nIt is an advance version of 3NF that\u2019s why it is also referred as 3.5NF. BCNF is stricter than 3NF. A table complies with BCNF if it is in 3NF and for every functional dependency X->Y, X should be the super key of the table.\r\n\r\nExample: Suppose there is a company wherein employees work in more than one department. They store the data like this:\r\n\r\nemp_id\temp_nationality\temp_dept\tdept_type\tdept_no_of_emp\r\n1001\tAustrian\tProduction and planning\tD001\t200\r\n1001\tAustrian\tstores\tD001\t250\r\n1002\tAmerican\tdesign and technical support\tD134\t100\r\n1002\tAmerican\tPurchasing department\tD134\t600\r\nFunctional dependencies in the table above:\r\nemp_id -> emp_nationality\r\nemp_dept -> {dept_type, dept_no_of_emp}\r\n\r\nCandidate key: {emp_id, emp_dept}\r\n\r\nThe table is not in BCNF as neither emp_id nor emp_dept alone are keys.\r\n\r\nTo make the table comply with BCNF we can break the table in three tables like this:\r\nemp_nationality table:\r\n\r\nemp_id\temp_nationality\r\n1001\tAustrian\r\n1002\tAmerican\r\nemp_dept table:\r\n\r\nemp_dept\tdept_type\tdept_no_of_emp\r\nProduction and planning\tD001\t200\r\nstores\tD001\t250\r\ndesign and technical support\tD134\t100\r\nPurchasing department\tD134\t600\r\nemp_dept_mapping table:\r\n\r\nemp_id\temp_dept\r\n1001\tProduction and planning\r\n1001\tstores\r\n1002\tdesign and technical support\r\n1002\tPurchasing department\r\nFunctional dependencies:\r\nemp_id -> emp_nationality\r\nemp_dept -> {dept_type, dept_no_of_emp}\r\n\r\nCandidate keys:\r\nFor first table: emp_id\r\nFor second table: emp_dept\r\nFor third table: {emp_id, emp_dept}\r\n\r\nThis is now in BCNF as in both the functional dependencies left side part is a key."
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 5,
+    "fields": {
+        "owner": 1,
+        "title": "ER Model",
+        "created": "2018-08-18T19:27:38.660Z",
+        "updated": "2018-08-18T19:27:38.660Z",
+        "content": "The logical ER model contains more detail than the conceptual ER model. In addition to master data entities, operational and transactional data entities are now defined. ... The physical ER model is normally developed to be instantiated as a database."
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 6,
+    "fields": {
+        "owner": 1,
+        "title": "Array",
+        "created": "2018-08-18T19:45:02.850Z",
+        "updated": "2018-08-18T19:45:11.610Z",
+        "content": "In abstract array theory, the virtual item of an empty array may be any array, with the consequence that empty arrays of the same shape differ according to their virtual items. In conformal array theory, empty arrays of the same shape are the same."
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 7,
+    "fields": {
+        "owner": 1,
+        "title": "Link LIst",
+        "created": "2018-08-18T19:46:18.369Z",
+        "updated": "2018-08-18T19:46:18.369Z",
+        "content": "A node is a collection of two sub-elements or parts. A data part that stores the element and a next part that stores the link to the next node. Linked List: A linked list is formed when many such nodes are linked together to form a chain."
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 8,
+    "fields": {
+        "owner": 1,
+        "title": "Tree",
+        "created": "2018-08-18T19:47:36.976Z",
+        "updated": "2018-08-18T19:47:36.976Z",
+        "content": "Tree\r\nA tree is an undirected graph G that satisfies any of the following equivalent conditions:\r\n\r\nG is connected and has no cycles.\r\nG is acyclic, and a simple cycle is formed if any edge is added to G.\r\nG is connected, but would become disconnected if any single edge is removed from G.\r\nG is connected and the 3-vertex complete graph K3 is not a minor of G.\r\nAny two vertices in G can be connected by a unique simple path.\r\nIf G has finitely many vertices, say n of them, then the above statements are also equivalent to any of the following conditions:\r\n\r\nG is connected and has n \u2212 1 edges.\r\nG is connected, and every subgraph of G includes at least one vertex with zero or one incident edges. (That is, G is connected and 1-degenerate.)\r\nG has no simple cycles and has n \u2212 1 edges.\r\nAs elsewhere in graph theory, the order-zero graph (graph with no vertices) is generally not considered to be a tree: while it is vacuously connected as a graph (any two vertices can be connected by a path), it is not 0-connected (or even (\u22121)-connected) in algebraic topology, unlike non-empty trees, and violates the \"one more vertex than edges\" relation. It may, however, be considered as a forest consisting of zero trees.\r\n\r\nAn internal vertex (or inner vertex or branch vertex) is a vertex of degree at least 2. Similarly, an external vertex (or outer vertex, terminal vertex or leaf) is a vertex of degree 1.\r\n\r\nAn irreducible tree (or series-reduced tree) is a tree in which there is no vertex of degree 2."
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 9,
+    "fields": {
+        "owner": 1,
+        "title": "Graph",
+        "created": "2018-08-18T19:48:24.673Z",
+        "updated": "2018-08-18T19:48:24.673Z",
+        "content": "Graph\r\nIn the most common sense of the term,[1] a graph is an ordered pair G = (V, E) comprising a set V of vertices or nodes or points together with a set E of edges or arcs or lines, which are 2-element subsets of V (i.e. an edge is associated with two vertices, and that association takes the form of the unordered pair comprising those two vertices). To avoid ambiguity, this type of graph may be described precisely as undirected and simple.\r\n\r\nOther senses of graph stem from different conceptions of the edge set. In one more generalized notion,[2] V is a set together with a relation of incidence that associates with each edge two vertices. In another generalized notion, E is a multiset of unordered pairs of (not necessarily distinct) vertices. Many authors call this type of object a multigraph or pseudograph.\r\n\r\nAll of these variants and others are described more fully below.\r\n\r\nThe vertices belonging to an edge are called the ends or end vertices of the edge. A vertex may exist in a graph and not belong to an edge.\r\n\r\nV and E are usually taken to be finite, and many of the well-known results are not true (or are rather different) for infinite graphs because many of the arguments fail in the infinite case. The order of a graph is |V |, its number of vertices. The size of a graph is |E|, its number of edges. The degree or valency of a vertex is the number of edges that connect to it, where an edge that connects a vertex to itself (a loop) is counted twice.\r\n\r\nFor an edge {x, y}, graph theorists usually use the somewhat shorter notation xy."
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 10,
+    "fields": {
+        "owner": 1,
+        "title": "Hypercube Network",
+        "created": "2018-08-18T20:30:36.656Z",
+        "updated": "2018-08-18T20:30:52.721Z",
+        "content": "Hypercube architecture is helpful for those parallel algorithms where each task has to communicate with other tasks. Hypercube topology can easily embed other topologies such as ring and mesh. It is also known as n-cubes, where n is the number of dimensions. A hypercube can be constructed recursively."
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 11,
+    "fields": {
+        "owner": 1,
+        "title": "Graph Coloring",
+        "created": "2018-08-18T20:37:09.696Z",
+        "updated": "2018-08-18T20:37:09.696Z",
+        "content": "Graph coloring is a method to assign colors to the vertices of a graph so that no two adjacent vertices have the same color. Some graph coloring problems are \u2212\r\n\r\nVertex coloring \u2212 A way of coloring the vertices of a graph so that no two adjacent vertices share the same color.\r\n\r\nEdge Coloring \u2212 It is the method of assigning a color to each edge so that no two adjacent edges have the same color.\r\n\r\nFace coloring \u2212 It assigns a color to each face or region of a planar graph so that no two faces that share a common boundary have the same color."
+    }
+},
+{
+    "model": "courses.text",
+    "pk": 12,
+    "fields": {
+        "owner": 1,
+        "title": "'courses.apps.CoursesConfig',",
+        "created": "2018-08-19T12:31:00.913Z",
+        "updated": "2018-08-19T12:31:00.913Z",
+        "content": "'courses.apps.CoursesConfig',"
+    }
+},
+{
+    "model": "courses.image",
+    "pk": 2,
+    "fields": {
+        "owner": 1,
+        "title": "ER Model",
+        "created": "2018-08-18T19:27:52.721Z",
+        "updated": "2018-08-18T19:27:52.721Z",
+        "file": "images/Qi8P0_bGTiaeR.png"
+    }
+},
+{
+    "model": "courses.image",
+    "pk": 3,
+    "fields": {
+        "owner": 1,
+        "title": "Array View",
+        "created": "2018-08-18T19:45:48.041Z",
+        "updated": "2018-08-18T19:45:48.041Z",
+        "file": "images/Arrays-1.png"
+    }
+},
+{
+    "model": "courses.image",
+    "pk": 4,
+    "fields": {
+        "owner": 1,
+        "title": "Link LIst View",
+        "created": "2018-08-18T19:46:41.112Z",
+        "updated": "2018-08-18T19:46:41.112Z",
+        "file": "images/link-listmycomputerscience.net_.png"
+    }
+},
+{
+    "model": "courses.image",
+    "pk": 5,
+    "fields": {
+        "owner": 1,
+        "title": "Tree View",
+        "created": "2018-08-18T19:48:04.338Z",
+        "updated": "2018-08-18T19:48:04.338Z",
+        "file": "images/Tree.png"
+    }
+},
+{
+    "model": "courses.image",
+    "pk": 6,
+    "fields": {
+        "owner": 1,
+        "title": "Graph View",
+        "created": "2018-08-18T19:48:45.849Z",
+        "updated": "2018-08-18T19:48:45.849Z",
+        "file": "images/Graph_1.png"
+    }
+},
+{
+    "model": "courses.image",
+    "pk": 7,
+    "fields": {
+        "owner": 1,
+        "title": "Hypercube Network",
+        "created": "2018-08-18T20:32:41.011Z",
+        "updated": "2018-08-18T20:32:41.011Z",
+        "file": "images/img554.gif"
+    }
+},
+{
+    "model": "courses.image",
+    "pk": 8,
+    "fields": {
+        "owner": 1,
+        "title": "Graph Coloring",
+        "created": "2018-08-18T20:38:25.699Z",
+        "updated": "2018-08-18T20:38:25.699Z",
+        "file": "images/5-Figure4-1.png"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 2,
+    "fields": {
+        "owner": 1,
+        "title": "Normal Form Video Lecture",
+        "created": "2018-08-18T16:05:58.036Z",
+        "updated": "2018-08-18T16:05:58.036Z",
+        "url": "https://youtu.be/oylHRgBDfNc"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 4,
+    "fields": {
+        "owner": 1,
+        "title": "ER Model Video Lecture",
+        "created": "2018-08-18T19:28:14.802Z",
+        "updated": "2018-08-18T19:28:14.802Z",
+        "url": "https://youtu.be/Wv1c9K4788A"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 5,
+    "fields": {
+        "owner": 1,
+        "title": "Graph Theory Video Lectures",
+        "created": "2018-08-18T19:54:39.065Z",
+        "updated": "2018-08-18T19:54:39.065Z",
+        "url": "https://www.youtube.com/watch?v=ru0PZSlSb00&list=PLmXKhU9FNesS7GpOddHDX3ZCl86_cwcIn"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 6,
+    "fields": {
+        "owner": 1,
+        "title": "Tree Video Lectures",
+        "created": "2018-08-18T19:55:48.541Z",
+        "updated": "2018-08-18T19:55:48.541Z",
+        "url": "https://www.youtube.com/watch?v=KlVNKEECLIc&list=PLmXKhU9FNesRRy20Hjr2GuQ7Y6wevfsc5"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 7,
+    "fields": {
+        "owner": 1,
+        "title": "Link List Video Lectures",
+        "created": "2018-08-18T19:59:08.395Z",
+        "updated": "2018-08-18T19:59:08.395Z",
+        "url": "https://youtu.be/NobHlGUjV3g"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 8,
+    "fields": {
+        "owner": 1,
+        "title": "Array Video Lecture",
+        "created": "2018-08-18T20:01:09.890Z",
+        "updated": "2018-08-18T20:02:35.094Z",
+        "url": "https://youtu.be/B0Qx0CJJh-I"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 9,
+    "fields": {
+        "owner": 1,
+        "title": "Hypercube Network Video Lecture",
+        "created": "2018-08-18T20:34:20.499Z",
+        "updated": "2018-08-18T20:34:20.499Z",
+        "url": "https://www.youtube.com/watch?v=V4TXwxDS0Ss"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 10,
+    "fields": {
+        "owner": 1,
+        "title": "Graph Coloring",
+        "created": "2018-08-18T20:39:42.292Z",
+        "updated": "2018-08-18T20:39:42.292Z",
+        "url": "https://www.youtube.com/watch?v=052VkKhIaQ4&t=15s"
+    }
+}
+]

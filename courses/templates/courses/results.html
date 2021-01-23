@@ -1,0 +1,10 @@
+<h1>{{ course.title }}</h1>
+
+<ul>
+{% for choice in course.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} recommend{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+
+<a href="{% url 'course_chart' %}">System Recommendation</a>
